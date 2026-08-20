@@ -11,14 +11,14 @@ public class ContainsDuplicate
     /// </summary>
     /// <param name="nums">Input integer array.</param>
     /// <returns>True if the array contains a duplicate value; otherwise, false.</returns>
-    public bool Solve(int[] nums)
+    public static bool Solve(int[] nums)
     {
         ArgumentNullException.ThrowIfNull(nums);
 
-        HashSet<int> included = [];
+        HashSet<int> seen = [];
 
         foreach (var num in nums)
-            if (!included.Add(num)) return true;
+            if (!seen.Add(num)) return true;
 
         return false;        
     }

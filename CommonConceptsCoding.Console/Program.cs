@@ -11,7 +11,7 @@ int[] numsWithDuplicate = [1, 2, 3, 1];
 int[] numsWithoutDuplicate = [1, 2, 3, 4];
 
 Console.WriteLine("Contains Duplicates?");
-Console.WriteLine($"[1,2,3,1] -> {containsDuplicate.Solve(numsWithDuplicate)}");
-Console.WriteLine($"[1,2,3,4] -> {containsDuplicate.Solve(numsWithoutDuplicate)}");
+Console.WriteLine($"[1,2,3,1] -> {ContainsDuplicate.Solve(numsWithDuplicate)}");
+Console.WriteLine($"[1,2,3,4] -> {ContainsDuplicate.Solve(numsWithoutDuplicate)}");
 
 #endregion 01Arrays&Hashing-01ContainsDuplicate
