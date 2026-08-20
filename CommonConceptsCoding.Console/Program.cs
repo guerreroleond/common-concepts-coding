@@ -5,8 +5,6 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 01Arrays&Hashing-01ContainsDuplicate
 
-var containsDuplicate = new ContainsDuplicate();
-
 int[] numsWithDuplicate = [1, 2, 3, 1];
 int[] numsWithoutDuplicate = [1, 2, 3, 4];
 
