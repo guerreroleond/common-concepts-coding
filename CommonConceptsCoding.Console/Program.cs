@@ -16,10 +16,18 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 01Arrays&Hashing-02ValidAnagram
 
-var validAnagram = new ValidAnagram();
+//var validAnagram = new ValidAnagram();
 
-Console.WriteLine("Valid Anagram?");
-Console.WriteLine($"anagram, nagaram -> {ValidAnagram.Solve("anagram", "nagaram")}");
-Console.WriteLine($"rat, car -> {ValidAnagram.Solve("rat", "car")}");
+//Console.WriteLine("Valid Anagram?");
+//Console.WriteLine($"anagram, nagaram -> {ValidAnagram.Solve("anagram", "nagaram")}");
+//Console.WriteLine($"rat, car -> {ValidAnagram.Solve("rat", "car")}");
 
 #endregion 01Arrays&Hashing-02ValidAnagram
+
+#region 01Arrays&Hashing-03TwoSum
+
+Console.WriteLine("Two Sum?");
+Console.WriteLine($"[2,7,11,15], 9 -> [{string.Join(", ", TwoSum.Solve([2, 7, 11, 15], 9))}]");
+Console.WriteLine($"[3,2,4], 6 -> [{string.Join(", ", TwoSum.Solve([3, 2, 4], 6))}]");
+
+#endregion 01Arrays&Hashing-03TwoSum
