@@ -21,7 +21,7 @@ public class ValidAnagram
         // Not anagrams if lengths are different.
         if (wordA.Length != wordB.Length) return false;
 
-        var charCounts = new int[28];
+        var charCounts = new int[26];
 
         foreach (char c in wordA)
             charCounts[c - 'a']++;
