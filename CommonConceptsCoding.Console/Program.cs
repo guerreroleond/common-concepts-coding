@@ -26,8 +26,18 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 01Arrays&Hashing-03TwoSum
 
-Console.WriteLine("Two Sum?");
-Console.WriteLine($"[2,7,11,15], 9 -> [{string.Join(", ", TwoSum.Solve([2, 7, 11, 15], 9))}]");
-Console.WriteLine($"[3,2,4], 6 -> [{string.Join(", ", TwoSum.Solve([3, 2, 4], 6))}]");
+//Console.WriteLine("Two Sum?");
+//Console.WriteLine($"[2,7,11,15], 9 -> [{string.Join(", ", TwoSum.Solve([2, 7, 11, 15], 9))}]");
+//Console.WriteLine($"[3,2,4], 6 -> [{string.Join(", ", TwoSum.Solve([3, 2, 4], 6))}]");
 
 #endregion 01Arrays&Hashing-03TwoSum
+
+#region 01Arrays&Hashing-04GroupAnagrams
+
+Console.WriteLine("Group Anagrams?");
+var result1 = GroupAnagrams.Solve(["eat", "tea", "tan", "ate", "nat", "bat"]);
+Console.WriteLine($"[eat,tea,tan,ate,nat,bat] -> [{string.Join(", ", result1.Select(g => $"[{string.Join(",", g)}]"))}]");
+var result2 = GroupAnagrams.Solve(["a"]);
+Console.WriteLine($"[a] -> [{string.Join(", ", result2.Select(g => $"[{string.Join(",", g)}]"))}]");
+
+#endregion 01Arrays&Hashing-04GroupAnagrams
