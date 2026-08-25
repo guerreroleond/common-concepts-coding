@@ -16,9 +16,9 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 01Arrays&Hashing-02ValidAnagram
 
-Console.WriteLine("Valid Anagram?");
-//Console.WriteLine($"anagram, nagaram -> {ValidAnagram.Solve("anagram", "nagaram")}");
-Console.WriteLine($"rat, car -> {ValidAnagram.ConstrainedSolve("rat", "car")}");
+// Console.WriteLine("Valid Anagram?");
+// Console.WriteLine($"anagram, nagaram -> {ValidAnagram.Solve("anagram", "nagaram")}");
+// Console.WriteLine($"rat, car -> {ValidAnagram.ConstrainedSolve("rat", "car")}");
 
 #endregion 01Arrays&Hashing-02ValidAnagram
 
@@ -32,10 +32,10 @@ Console.WriteLine($"rat, car -> {ValidAnagram.ConstrainedSolve("rat", "car")}");
 
 #region 01Arrays&Hashing-04GroupAnagrams
 
-// Console.WriteLine("Group Anagrams?");
-// var result1 = GroupAnagrams.Solve(["eat", "tea", "tan", "ate", "nat", "bat"]);
-// Console.WriteLine($"[eat,tea,tan,ate,nat,bat] -> [{string.Join(", ", result1.Select(g => $"[{string.Join(",", g)}]"))}]");
-// var result2 = GroupAnagrams.Solve(["a"]);
-// Console.WriteLine($"[a] -> [{string.Join(", ", result2.Select(g => $"[{string.Join(",", g)}]"))}]");
+Console.WriteLine("Group Anagrams?");
+var result1 = GroupAnagrams.ConstrainedSolve(["eat", "tea", "tan", "ate", "nat", "bat"]);
+Console.WriteLine($"[eat,tea,tan,ate,nat,bat] -> [{string.Join(", ", result1.Select(g => $"[{string.Join(",", g)}]"))}]");
+var result2 = GroupAnagrams.ConstrainedSolve(["a"]);
+Console.WriteLine($"[a] -> [{string.Join(", ", result2.Select(g => $"[{string.Join(",", g)}]"))}]");
 
 #endregion 01Arrays&Hashing-04GroupAnagrams
