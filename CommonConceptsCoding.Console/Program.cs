@@ -32,10 +32,18 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 01Arrays&Hashing-04GroupAnagrams
 
-Console.WriteLine("Group Anagrams?");
-var result1 = GroupAnagrams.ConstrainedSolve(["eat", "tea", "tan", "ate", "nat", "bat"]);
-Console.WriteLine($"[eat,tea,tan,ate,nat,bat] -> [{string.Join(", ", result1.Select(g => $"[{string.Join(",", g)}]"))}]");
-var result2 = GroupAnagrams.ConstrainedSolve(["a"]);
-Console.WriteLine($"[a] -> [{string.Join(", ", result2.Select(g => $"[{string.Join(",", g)}]"))}]");
+//Console.WriteLine("Group Anagrams?");
+//var result1 = GroupAnagrams.ConstrainedSolve(["eat", "tea", "tan", "ate", "nat", "bat"]);
+//Console.WriteLine($"[eat,tea,tan,ate,nat,bat] -> [{string.Join(", ", result1.Select(g => $"[{string.Join(",", g)}]"))}]");
+//var result2 = GroupAnagrams.ConstrainedSolve(["a"]);
+//Console.WriteLine($"[a] -> [{string.Join(", ", result2.Select(g => $"[{string.Join(",", g)}]"))}]");
 
 #endregion 01Arrays&Hashing-04GroupAnagrams
+
+#region 01Arrays&Hashing-05TopKFrequentElements
+
+Console.WriteLine("Top K Frequent Elements?");
+Console.WriteLine($"[1,1,1,2,2,3], k=2 -> [{string.Join(", ", TopKFrequentElements.Solve([1, 1, 1, 2, 2, 3], 2))}]");
+Console.WriteLine($"[1], k=1 -> [{string.Join(", ", TopKFrequentElements.Solve([1], 1))}]");
+
+#endregion 01Arrays&Hashing-05TopKFrequentElements
