@@ -43,7 +43,7 @@ Console.WriteLine("Common Concepts for Coding");
 #region 01Arrays&Hashing-05TopKFrequentElements
 
 Console.WriteLine("Top K Frequent Elements?");
-Console.WriteLine($"[1,1,1,2,2,3], k=2 -> [{string.Join(", ", TopKFrequentElements.Solve([1, 1, 1, 2, 2, 3], 2))}]");
+Console.WriteLine($"[1,1,1,2,2,2,3], k=2 -> [{string.Join(", ", TopKFrequentElements.Solve([1, 1, 1, 2, 2, 2, 3], 2))}]");
 Console.WriteLine($"[1], k=1 -> [{string.Join(", ", TopKFrequentElements.Solve([1], 1))}]");
 
 #endregion 01Arrays&Hashing-05TopKFrequentElements
