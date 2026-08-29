@@ -42,8 +42,26 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 01Arrays&Hashing-05TopKFrequentElements
 
-Console.WriteLine("Top K Frequent Elements?");
-Console.WriteLine($"[1,1,1,2,2,2,3], k=2 -> [{string.Join(", ", TopKFrequentElements.Solve([1, 1, 1, 2, 2, 2, 3], 2))}]");
-Console.WriteLine($"[1], k=1 -> [{string.Join(", ", TopKFrequentElements.Solve([1], 1))}]");
+//Console.WriteLine("Top K Frequent Elements?");
+//Console.WriteLine($"[1,1,1,2,2,2,3], k=2 -> [{string.Join(", ", TopKFrequentElements.Solve([1, 1, 1, 2, 2, 2, 3], 2))}]");
+//Console.WriteLine($"[1], k=1 -> [{string.Join(", ", TopKFrequentElements.Solve([1], 1))}]");
 
 #endregion 01Arrays&Hashing-05TopKFrequentElements
+
+#region 01Arrays&Hashing-06EncodeAndDecodeStrings [Medium]
+
+List<string> input1 = ["Hello World!", "123#456", "", "a#b#c", "こんにちは" ];
+
+Console.WriteLine("Encode & Decode Strings?");
+
+var encoded1 = EncodeAndDecodeStrings.Encode(input1);
+var decoded1 = EncodeAndDecodeStrings.Decode(encoded1);
+var decoded1Display = string.Join(", ", decoded1);
+Console.WriteLine(
+    $"[Hello World!,123#456,,a#b#c,こんにちは]" +
+    $" -> \"{encoded1}\"" +
+    $" -> [{decoded1Display}]");
+
+#endregion 01Arrays&Hashing-06EncodeAndDecodeStrings [Medium]
+
+Console.ReadKey();
