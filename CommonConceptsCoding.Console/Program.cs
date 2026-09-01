@@ -50,18 +50,52 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 01Arrays&Hashing-06EncodeAndDecodeStrings [Medium]
 
-List<string> input1 = ["Hello World!", "123#456", "", "a#b#c", "こんにちは" ];
+//List<string> input1 = ["Hello World!", "123#456", "", "a#b#c", "こんにちは" ];
 
-Console.WriteLine("Encode & Decode Strings?");
+//Console.WriteLine("Encode & Decode Strings?");
 
-var encoded1 = EncodeAndDecodeStrings.Encode(input1);
-var decoded1 = EncodeAndDecodeStrings.Decode(encoded1);
-var decoded1Display = string.Join(", ", decoded1);
-Console.WriteLine(
-    $"[Hello World!,123#456,,a#b#c,こんにちは]" +
-    $" -> \"{encoded1}\"" +
-    $" -> [{decoded1Display}]");
+//var encoded1 = EncodeAndDecodeStrings.Encode(input1);
+//var decoded1 = EncodeAndDecodeStrings.Decode(encoded1);
+//var decoded1Display = string.Join(", ", decoded1);
+//Console.WriteLine(
+//    $"[Hello World!,123#456,,a#b#c,こんにちは]" +
+//    $" -> \"{encoded1}\"" +
+//    $" -> [{decoded1Display}]");
 
 #endregion 01Arrays&Hashing-06EncodeAndDecodeStrings [Medium]
 
-Console.ReadKey();
+#region 01Arrays&Hashing-07ValidSudoku [Medium]
+
+char[][] validBoard =
+[
+    ['5','3','.','.','7','.','.','.','.'],
+    ['6','.','.','1','9','5','.','.','.'],
+    ['.','9','8','.','.','.','.','6','.'],
+    ['8','.','.','.','6','.','.','.','3'],
+    ['4','.','.','8','.','3','.','.','1'],
+    ['7','.','.','.','2','.','.','.','6'],
+    ['.','6','.','.','.','.','2','8','.'],
+    ['.','.','.','4','1','9','.','.','5'],
+    ['.','.','.','.','8','.','.','7','9'],
+];
+
+char[][] invalidBoard =
+[
+    ['8','3','.','.','7','.','.','.','.'],
+    ['6','.','.','1','9','5','.','.','.'],
+    ['.','9','8','.','.','.','.','6','.'],
+    ['8','.','.','.','6','.','.','.','3'],
+    ['4','.','.','8','.','3','.','.','1'],
+    ['7','.','.','.','2','.','.','.','6'],
+    ['.','6','.','.','.','.','2','8','.'],
+    ['.','.','.','4','1','9','.','.','5'],
+    ['.','.','.','.','8','.','.','7','9'],
+];
+
+Console.WriteLine("Valid Sudoku?");
+Console.WriteLine($"Valid board -> {ValidSudoku.IsValid(validBoard)}");
+Console.WriteLine($"Invalid board -> {ValidSudoku.IsValid(invalidBoard)}");
+
+#endregion 01Arrays&Hashing-07ValidSudoku [Medium]
+
+Console.ReadLine();
