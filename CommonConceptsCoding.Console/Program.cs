@@ -93,8 +93,8 @@ char[][] invalidBoard =
 ];
 
 Console.WriteLine("Valid Sudoku?");
-Console.WriteLine($"Valid board -> {ValidSudoku.IsValid(validBoard)}");
-Console.WriteLine($"Invalid board -> {ValidSudoku.IsValid(invalidBoard)}");
+Console.WriteLine($"Valid board -> {ValidSudoku.IsValidOptimal(validBoard)}");
+Console.WriteLine($"Invalid board -> {ValidSudoku.IsValidOptimal(invalidBoard)}");
 
 #endregion 01Arrays&Hashing-07ValidSudoku [Medium]
 
