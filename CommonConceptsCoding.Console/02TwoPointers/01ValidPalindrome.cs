@@ -13,19 +13,17 @@ public class ValidPalindrome
     /// <returns>True if the string is a palindrome; otherwise, false.</returns>
     public static bool IsPalindrome(string s)
     {
-        if (string.Empty == s) return true;
-
         var left = 0;
         var right = s.Length - 1;
 
         while (left < right)
         {
             // Discard non-alphanumeric chars.
-            while (!char.IsLetterOrDigit(s[left])
-            && left < right)
+            while (left < right
+            && !char.IsLetterOrDigit(s[left]))
                 left++;
-            while (!char.IsLetterOrDigit(s[right])
-            && right > left)
+            while (right > left
+            && !char.IsLetterOrDigit(s[right]))
                 right--;
 
             if (char.ToLowerInvariant(s[left])
