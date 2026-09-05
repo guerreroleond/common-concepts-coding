@@ -66,36 +66,44 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 01Arrays&Hashing-07ValidSudoku [Medium]
 
-char[][] validBoard =
-[
-    ['5','3','.','.','7','.','.','.','.'],
-    ['6','.','.','1','9','5','.','.','.'],
-    ['.','9','8','.','.','.','.','6','.'],
-    ['8','.','.','.','6','.','.','.','3'],
-    ['4','.','.','8','.','3','.','.','1'],
-    ['7','.','.','.','2','.','.','.','6'],
-    ['.','6','.','.','.','.','2','8','.'],
-    ['.','.','.','4','1','9','.','.','5'],
-    ['.','.','.','.','8','.','.','7','9'],
-];
+//char[][] validBoard =
+//[
+//    ['5','3','.','.','7','.','.','.','.'],
+//    ['6','.','.','1','9','5','.','.','.'],
+//    ['.','9','8','.','.','.','.','6','.'],
+//    ['8','.','.','.','6','.','.','.','3'],
+//    ['4','.','.','8','.','3','.','.','1'],
+//    ['7','.','.','.','2','.','.','.','6'],
+//    ['.','6','.','.','.','.','2','8','.'],
+//    ['.','.','.','4','1','9','.','.','5'],
+//    ['.','.','.','.','8','.','.','7','9'],
+//];
 
-char[][] invalidBoard =
-[
-    ['8','3','.','.','7','.','.','.','.'],
-    ['6','.','.','1','9','5','.','.','.'],
-    ['.','9','8','.','.','.','.','6','.'],
-    ['8','.','.','.','6','.','.','.','3'],
-    ['4','.','.','8','.','3','.','.','1'],
-    ['7','.','.','.','2','.','.','.','6'],
-    ['.','6','.','.','.','.','2','8','.'],
-    ['.','.','.','4','1','9','.','.','5'],
-    ['.','.','.','.','8','.','.','7','9'],
-];
+//char[][] invalidBoard =
+//[
+//    ['8','3','.','.','7','.','.','.','.'],
+//    ['6','.','.','1','9','5','.','.','.'],
+//    ['.','9','8','.','.','.','.','6','.'],
+//    ['8','.','.','.','6','.','.','.','3'],
+//    ['4','.','.','8','.','3','.','.','1'],
+//    ['7','.','.','.','2','.','.','.','6'],
+//    ['.','6','.','.','.','.','2','8','.'],
+//    ['.','.','.','4','1','9','.','.','5'],
+//    ['.','.','.','.','8','.','.','7','9'],
+//];
 
-Console.WriteLine("Valid Sudoku?");
-Console.WriteLine($"Valid board -> {ValidSudoku.IsValidOptimal(validBoard)}");
-Console.WriteLine($"Invalid board -> {ValidSudoku.IsValidOptimal(invalidBoard)}");
+//Console.WriteLine("Valid Sudoku?");
+//Console.WriteLine($"Valid board -> {ValidSudoku.IsValidOptimal(validBoard)}");
+//Console.WriteLine($"Invalid board -> {ValidSudoku.IsValidOptimal(invalidBoard)}");
 
 #endregion 01Arrays&Hashing-07ValidSudoku [Medium]
+
+#region 02TwoPointers-01ValidPalindrome [Easy]
+
+Console.WriteLine("Valid Palindrome?");
+Console.WriteLine($"A man, a plan, a canal: Panama -> {ValidPalindrome.IsPalindrome("A man, a plan, a canal: Panama")}");
+Console.WriteLine($"race a car -> {ValidPalindrome.IsPalindrome("race a car")}");
+
+#endregion 02TwoPointers-01ValidPalindrome [Easy]
 
 Console.ReadLine();
