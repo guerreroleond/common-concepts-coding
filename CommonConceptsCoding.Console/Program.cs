@@ -100,10 +100,21 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 02TwoPointers-01ValidPalindrome [Easy]
 
-Console.WriteLine("Valid Palindrome?");
-Console.WriteLine($"A man, a plan, a canal: Panama -> {ValidPalindrome.IsPalindrome("A man, a plan, a canal: Panama")}");
-Console.WriteLine($"race a car -> {ValidPalindrome.IsPalindrome("race a car")}");
+//Console.WriteLine("Valid Palindrome?");
+//Console.WriteLine($"A man, a plan, a canal: Panama -> {ValidPalindrome.IsPalindrome("A man, a plan, a canal: Panama")}");
+//Console.WriteLine($"race a car -> {ValidPalindrome.IsPalindrome("race a car")}");
 
 #endregion 02TwoPointers-01ValidPalindrome [Easy]
+
+#region 02TwoPointers-0TwoSumII [Medium]
+
+Console.WriteLine("Two Sum II?");
+var result1 = TwoSumII.Solve([2, 7, 11, 15], 18);
+Console.WriteLine($"[2,7,11,15], target=18 -> [{string.Join(", ", result1)}]");
+
+var result2 = TwoSumII.Solve([2, 3, 4], 6);
+Console.WriteLine($"[2,3,4], target=6 -> [{string.Join(", ", result2)}]");
+
+#endregion 02TwoPointers-0TwoSumII [Medium]
 
 Console.ReadLine();
