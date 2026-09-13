@@ -7,7 +7,7 @@ namespace CommonConceptsCoding.Console;
 public class TwoSumII
 {
     /// <summary>
-    /// 02TwoPointers-0TwoSumII [Medium]
+    /// 02TwoPointers-02TwoSumII [Medium]
     /// Uses a two-pointer approach on the sorted input array to find the pair whose sum equals the target.
     /// </summary>
     /// <param name="numbers">Sorted list of integers.</param>
@@ -37,7 +37,7 @@ public class TwoSumII
     }
 
     /// <summary>
-    /// 02TwoPointers-0TwoSumII [Medium]
+    /// 02TwoPointers-02TwoSumII [Medium]
     /// </summary>
     /// <param name="numbers">Sorted input integer array.</param>
     /// <param name="target">Target sum to find.</param>
