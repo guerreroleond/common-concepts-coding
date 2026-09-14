@@ -108,13 +108,24 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 02TwoPointers-02TwoSumII [Medium]
 
-Console.WriteLine("Two Sum II?");
-var result1 = TwoSumII.Solve([2, 7, 11, 15], 18);
-Console.WriteLine($"[2,7,11,15], target=18 -> [{string.Join(", ", result1)}]");
+//Console.WriteLine("Two Sum II?");
+//var result1 = TwoSumII.Solve([2, 7, 11, 15], 18);
+//Console.WriteLine($"[2,7,11,15], target=18 -> [{string.Join(", ", result1)}]");
 
-var result2 = TwoSumII.Solve([2, 3, 4], 6);
-Console.WriteLine($"[2,3,4], target=6 -> [{string.Join(", ", result2)}]");
+//var result2 = TwoSumII.Solve([2, 3, 4], 6);
+//Console.WriteLine($"[2,3,4], target=6 -> [{string.Join(", ", result2)}]");
 
 #endregion 02TwoPointers-02TwoSumII [Medium]
+
+#region 02TwoPointers-03ThreeSum [Medium]
+
+Console.WriteLine("Three Sum?");
+var result3 = ThreeSum.Solve([-1, 0, 1, 2, -1, -4]);
+Console.WriteLine($"[-1,0,1,2,-1,-4] -> [{string.Join(", ", result3.Select(triplet => $"[{string.Join(",", triplet)}]"))}]");
+
+var result4 = ThreeSum.Solve([0, 1, 1]);
+Console.WriteLine($"[0,1,1] -> [{string.Join(", ", result4.Select(triplet => $"[{string.Join(",", triplet)}]"))}]");
+
+#endregion 02TwoPointers-03ThreeSum [Medium]
 
 Console.ReadLine();
