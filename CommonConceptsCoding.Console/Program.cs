@@ -117,15 +117,17 @@ Console.WriteLine("Common Concepts for Coding");
 
 #endregion 02TwoPointers-02TwoSumII [Medium]
 
-#region 02TwoPointers-03ThreeSum [Medium]
+#region 02TwoPointers-04ContainerWithMostWater [Medium]
 
-Console.WriteLine("Three Sum?");
-var result3 = ThreeSum.Solve([-1, 0, 1, 2, -1, -4]);
-Console.WriteLine($"[-1,0,1,2,-1,-4] -> [{string.Join(", ", result3.Select(triplet => $"[{string.Join(",", triplet)}]"))}]");
+Console.WriteLine("Container With Most Water?");
+var waterHeights1 = new[] { 1,7,2,5,4,7,3,6 };
+var waterResult1 = ContainerWithMostWater.Solve(waterHeights1);
+Console.WriteLine($"[1,7,2,5,4,7,3,6] -> {waterResult1}");
 
-var result4 = ThreeSum.Solve([0, 1, 1]);
-Console.WriteLine($"[0,1,1] -> [{string.Join(", ", result4.Select(triplet => $"[{string.Join(",", triplet)}]"))}]");
+var waterHeights2 = new[] { 1, 1 };
+var waterResult2 = ContainerWithMostWater.Solve(waterHeights2);
+Console.WriteLine($"[1,1] -> {waterResult2}");
 
-#endregion 02TwoPointers-03ThreeSum [Medium]
+#endregion 02TwoPointers-04ContainerWithMostWater [Medium]
 
 Console.ReadLine();
