@@ -119,15 +119,28 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 02TwoPointers-04ContainerWithMostWater [Medium]
 
-Console.WriteLine("Container With Most Water?");
-var waterHeights1 = new[] { 1,7,2,5,4,7,3,6 };
-var waterResult1 = ContainerWithMostWater.Solve(waterHeights1);
-Console.WriteLine($"[1,7,2,5,4,7,3,6] -> {waterResult1}");
+//Console.WriteLine("Container With Most Water?");
+//var waterHeights1 = new[] { 1,7,2,5,4,7,3,6 };
+//var waterResult1 = ContainerWithMostWater.Solve(waterHeights1);
+//Console.WriteLine($"[1,7,2,5,4,7,3,6] -> {waterResult1}");
 
-var waterHeights2 = new[] { 1, 1 };
-var waterResult2 = ContainerWithMostWater.Solve(waterHeights2);
-Console.WriteLine($"[1,1] -> {waterResult2}");
+//var waterHeights2 = new[] { 1, 1 };
+//var waterResult2 = ContainerWithMostWater.Solve(waterHeights2);
+//Console.WriteLine($"[1,1] -> {waterResult2}");
 
 #endregion 02TwoPointers-04ContainerWithMostWater [Medium]
+
+#region 02TwoPointers-05TrappingRainWater [Hard]
+
+Console.WriteLine("Trapping Rain Water?");
+var rainHeights1 = new[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+var rainWater1 = TrappingRainWater.Solve(rainHeights1);
+Console.WriteLine($"[0,1,0,2,1,0,1,3,2,1,2,1] -> {rainWater1}");
+
+var rainHeights2 = new[] { 4, 2, 0, 3, 2, 5 };
+var rainWater2 = TrappingRainWater.Solve(rainHeights2);
+Console.WriteLine($"[4,2,0,3,2,5] -> {rainWater2}");
+
+#endregion 02TwoPointers-05TrappingRainWater [Hard]
 
 Console.ReadLine();
