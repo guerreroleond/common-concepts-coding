@@ -132,15 +132,32 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 02TwoPointers-05TrappingRainWater [Hard]
 
-Console.WriteLine("Trapping Rain Water?");
-var rainHeights1 = new[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
-var rainWater1 = TrappingRainWater.Solve(rainHeights1);
-Console.WriteLine($"[0,1,0,2,1,0,1,3,2,1,2,1] -> {rainWater1}");
+//Console.WriteLine("Trapping Rain Water?");
+//var rainHeights1 = new[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+//var rainWater1 = TrappingRainWater.Solve(rainHeights1);
+//Console.WriteLine($"[0,1,0,2,1,0,1,3,2,1,2,1] -> {rainWater1}");
 
-var rainHeights2 = new[] { 4, 2, 0, 3, 2, 5 };
-var rainWater2 = TrappingRainWater.Solve(rainHeights2);
-Console.WriteLine($"[4,2,0,3,2,5] -> {rainWater2}");
+//var rainHeights2 = new[] { 4, 2, 0, 3, 2, 5 };
+//var rainWater2 = TrappingRainWater.Solve(rainHeights2);
+//Console.WriteLine($"[4,2,0,3,2,5] -> {rainWater2}");
 
 #endregion 02TwoPointers-05TrappingRainWater [Hard]
+
+#region 03Stack-01ValidParenthesis [Easy]
+
+Console.WriteLine("Valid Parentheses?");
+// var validParentheses1 = "[]";
+// var isValid1 = ValidParentheses.IsValid(validParentheses1);
+// Console.WriteLine($"{validParentheses1} -> {isValid1}");
+
+// var validParentheses2 = "([{}])";
+// var isValid2 = ValidParentheses.IsValid(validParentheses2);
+// Console.WriteLine($"{validParentheses2} -> {isValid2}");
+
+var invalidParentheses = "()[]{}";
+var isValid3 = ValidParentheses.IsValid(invalidParentheses);
+Console.WriteLine($"{invalidParentheses} -> {isValid3}");
+
+#endregion 03Stack-01ValidParenthesis [Easy]
 
 Console.ReadLine();
