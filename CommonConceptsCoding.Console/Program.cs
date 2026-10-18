@@ -145,7 +145,7 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 03Stack-01ValidParenthesis [Easy]
 
-Console.WriteLine("Valid Parentheses?");
+//Console.WriteLine("Valid Parentheses?");
 // var validParentheses1 = "[]";
 // var isValid1 = ValidParentheses.IsValid(validParentheses1);
 // Console.WriteLine($"{validParentheses1} -> {isValid1}");
@@ -154,10 +154,24 @@ Console.WriteLine("Valid Parentheses?");
 // var isValid2 = ValidParentheses.IsValid(validParentheses2);
 // Console.WriteLine($"{validParentheses2} -> {isValid2}");
 
-var invalidParentheses = "()[]{}";
-var isValid3 = ValidParentheses.IsValid(invalidParentheses);
-Console.WriteLine($"{invalidParentheses} -> {isValid3}");
+//var invalidParentheses = "()[]{}";
+//var isValid3 = ValidParentheses.IsValid(invalidParentheses);
+//Console.WriteLine($"{invalidParentheses} -> {isValid3}");
 
 #endregion 03Stack-01ValidParenthesis [Easy]
+
+#region 03Stack-02MinStack [Medium]
+
+Console.WriteLine("Min Stack?");
+var minStack = new MinStack();
+minStack.Push(-2);
+minStack.Push(0);
+minStack.Push(-3);
+Console.WriteLine($"Minimum -> {minStack.GetMin()}");
+minStack.Pop();
+Console.WriteLine($"Top -> {minStack.Top()}");
+Console.WriteLine($"Minimum -> {minStack.GetMin()}");
+
+#endregion 03Stack-02MinStack [Medium]
 
 Console.ReadLine();
