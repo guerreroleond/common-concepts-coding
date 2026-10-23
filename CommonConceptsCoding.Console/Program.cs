@@ -162,16 +162,27 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 03Stack-02MinStack [Medium]
 
-Console.WriteLine("Min Stack?");
-var minStack = new MinStack();
-minStack.Push(-2);
-minStack.Push(0);
-minStack.Push(-3);
-Console.WriteLine($"Minimum -> {minStack.GetMin()}");
-minStack.Pop();
-Console.WriteLine($"Top -> {minStack.Top()}");
-Console.WriteLine($"Minimum -> {minStack.GetMin()}");
+//Console.WriteLine("Min Stack?");
+//var minStack = new MinStack();
+//minStack.Push(-2);
+//minStack.Push(0);
+//minStack.Push(-3);
+//Console.WriteLine($"Minimum -> {minStack.GetMin()}");
+//minStack.Pop();
+//Console.WriteLine($"Top -> {minStack.Top()}");
+//Console.WriteLine($"Minimum -> {minStack.GetMin()}");
 
 #endregion 03Stack-02MinStack [Medium]
+
+#region 03Stack-03ReversePolishNotation [Medium]
+
+Console.WriteLine("Reverse Polish Notation?");
+string[] rpnTokens1 = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"];
+Console.WriteLine($"[{string.Join(",", rpnTokens1)}] -> {ReversePolishNotation.Evaluate(rpnTokens1)}");
+
+string[] rpnTokens2 = ["4","13","5","/","+"];
+Console.WriteLine($"[{string.Join(",", rpnTokens2)}] -> {ReversePolishNotation.Evaluate(rpnTokens2)}");
+
+#endregion 03Stack-03ReversePolishNotation [Medium]
 
 Console.ReadLine();
