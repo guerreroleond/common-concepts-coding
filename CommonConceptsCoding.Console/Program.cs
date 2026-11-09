@@ -176,13 +176,30 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 03Stack-03ReversePolishNotation [Medium]
 
-Console.WriteLine("Reverse Polish Notation?");
-string[] rpnTokens1 = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"];
-Console.WriteLine($"[{string.Join(",", rpnTokens1)}] -> {ReversePolishNotation.Evaluate(rpnTokens1)}");
+//Console.WriteLine("Reverse Polish Notation?");
+//string[] rpnTokens1 = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"];
+//Console.WriteLine($"[{string.Join(",", rpnTokens1)}] -> {ReversePolishNotation.Evaluate(rpnTokens1)}");
 
-string[] rpnTokens2 = ["4","13","5","/","+"];
-Console.WriteLine($"[{string.Join(",", rpnTokens2)}] -> {ReversePolishNotation.Evaluate(rpnTokens2)}");
+//string[] rpnTokens2 = ["4","13","5","/","+"];
+//Console.WriteLine($"[{string.Join(",", rpnTokens2)}] -> {ReversePolishNotation.Evaluate(rpnTokens2)}");
 
 #endregion 03Stack-03ReversePolishNotation [Medium]
+
+#region 03Stack-04DailyTemperatures [Medium]
+
+Console.WriteLine("Daily Temperatures?");
+int[] temperatures1 = [73, 74, 75, 71, 69, 72, 76, 73];
+var daysUntilWarmer1 = DailyTemperatures.GetDaysUntilWarmer(temperatures1);
+Console.WriteLine(
+    $"[{string.Join(",", temperatures1)}]" +
+    $" -> [{string.Join(",", daysUntilWarmer1)}]");
+
+int[] temperatures2 = [30, 40, 50, 60];
+var daysUntilWarmer2 = DailyTemperatures.GetDaysUntilWarmer(temperatures2);
+Console.WriteLine(
+    $"[{string.Join(",", temperatures2)}]" +
+    $" -> [{string.Join(",", daysUntilWarmer2)}]");
+
+#endregion 03Stack-04DailyTemperatures [Medium]
 
 Console.ReadLine();
