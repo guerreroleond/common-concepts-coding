@@ -187,19 +187,32 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 03Stack-04DailyTemperatures [Medium]
 
-Console.WriteLine("Daily Temperatures?");
-int[] temperatures1 = [73, 74, 75, 71, 69, 72, 76, 73];
-var daysUntilWarmer1 = DailyTemperatures.GetDaysUntilWarmer(temperatures1);
-Console.WriteLine(
-    $"[{string.Join(",", temperatures1)}]" +
-    $" -> [{string.Join(",", daysUntilWarmer1)}]");
+//Console.WriteLine("Daily Temperatures?");
+//int[] temperatures1 = [73, 74, 75, 71, 69, 72, 76, 73];
+//var daysUntilWarmer1 = DailyTemperatures.GetDaysUntilWarmer(temperatures1);
+//Console.WriteLine(
+//    $"[{string.Join(",", temperatures1)}]" +
+//    $" -> [{string.Join(",", daysUntilWarmer1)}]");
 
-int[] temperatures2 = [30, 40, 50, 60];
-var daysUntilWarmer2 = DailyTemperatures.GetDaysUntilWarmer(temperatures2);
-Console.WriteLine(
-    $"[{string.Join(",", temperatures2)}]" +
-    $" -> [{string.Join(",", daysUntilWarmer2)}]");
+//int[] temperatures2 = [30, 40, 50, 60];
+//var daysUntilWarmer2 = DailyTemperatures.GetDaysUntilWarmer(temperatures2);
+//Console.WriteLine(
+//    $"[{string.Join(",", temperatures2)}]" +
+//    $" -> [{string.Join(",", daysUntilWarmer2)}]");
 
 #endregion 03Stack-04DailyTemperatures [Medium]
+
+#region 04BinarySearch-01BinarySearch [Easy]
+
+Console.WriteLine("Binary Search?");
+int[] binarySearchNums = [-1, 0, 2, 4, 6, 8];
+Console.WriteLine(
+    $"[{string.Join(",", binarySearchNums)}], target = 2" +
+    $" -> {BinarySearch.Search(binarySearchNums, 2)}");
+Console.WriteLine(
+    $"[{string.Join(",", binarySearchNums)}], target = 3" +
+    $" -> {BinarySearch.Search(binarySearchNums, 3)}");
+
+#endregion 04BinarySearch-01BinarySearch [Easy]
 
 Console.ReadLine();
