@@ -204,15 +204,34 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 04BinarySearch-01BinarySearch [Easy]
 
-Console.WriteLine("Binary Search?");
-int[] binarySearchNums = [-1, 0, 2, 4, 6, 8];
-Console.WriteLine(
-    $"[{string.Join(",", binarySearchNums)}], target = 2" +
-    $" -> {BinarySearch.Search(binarySearchNums, 2)}");
-Console.WriteLine(
-    $"[{string.Join(",", binarySearchNums)}], target = 3" +
-    $" -> {BinarySearch.Search(binarySearchNums, 3)}");
+//Console.WriteLine("Binary Search?");
+//int[] binarySearchNums = [-1, 0, 2, 4, 6, 8];
+//Console.WriteLine(
+//    $"[{string.Join(",", binarySearchNums)}], target = 2" +
+//    $" -> {BinarySearch.Search(binarySearchNums, 2)}");
+//Console.WriteLine(
+//    $"[{string.Join(",", binarySearchNums)}], target = 3" +
+//    $" -> {BinarySearch.Search(binarySearchNums, 3)}");
 
 #endregion 04BinarySearch-01BinarySearch [Easy]
+
+#region 04BinarySearch-02Search2DMatrix [Medium]
+
+Console.WriteLine("Search a 2D Matrix?");
+int[][] searchMatrix =
+[
+    [1, 2, 4, 8],
+    [10, 11, 12, 13],
+    [14, 20, 30, 40]
+];
+var matrixDisplay = string.Join(",", searchMatrix.Select(row => $"[{string.Join(",", row)}]"));
+Console.WriteLine(
+    $"[{matrixDisplay}], target = 10" +
+    $" -> {Search2DMatrix.Search(searchMatrix, 10)}");
+Console.WriteLine(
+    $"[{matrixDisplay}], target = 15" +
+    $" -> {Search2DMatrix.Search(searchMatrix, 15)}");
+
+#endregion 04BinarySearch-02Search2DMatrix [Medium]
 
 Console.ReadLine();
