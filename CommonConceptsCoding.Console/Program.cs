@@ -217,21 +217,36 @@ Console.WriteLine("Common Concepts for Coding");
 
 #region 04BinarySearch-02Search2DMatrix [Medium]
 
-Console.WriteLine("Search a 2D Matrix?");
-int[][] searchMatrix =
-[
-    [1, 2, 4, 8],
-    [10, 11, 12, 13],
-    [14, 20, 30, 40]
-];
-var matrixDisplay = string.Join(",", searchMatrix.Select(row => $"[{string.Join(",", row)}]"));
-Console.WriteLine(
-    $"[{matrixDisplay}], target = 10" +
-    $" -> {Search2DMatrix.Search(searchMatrix, 10)}");
-Console.WriteLine(
-    $"[{matrixDisplay}], target = 15" +
-    $" -> {Search2DMatrix.Search(searchMatrix, 15)}");
+//Console.WriteLine("Search a 2D Matrix?");
+//int[][] searchMatrix =
+//[
+//    [1, 2, 4, 8],
+//    [10, 11, 12, 13],
+//    [14, 20, 30, 40]
+//];
+//var matrixDisplay = string.Join(",", searchMatrix.Select(row => $"[{string.Join(",", row)}]"));
+//Console.WriteLine(
+//    $"[{matrixDisplay}], target = 10" +
+//    $" -> {Search2DMatrix.Search(searchMatrix, 10)}");
+//Console.WriteLine(
+//    $"[{matrixDisplay}], target = 15" +
+//    $" -> {Search2DMatrix.Search(searchMatrix, 15)}");
 
 #endregion 04BinarySearch-02Search2DMatrix [Medium]
+
+#region 04BinarySearch-03KokoEatingBananas [Medium]
+
+Console.WriteLine("Koko Eating Bananas?");
+int[] bananaPiles1 = [30, 11, 23, 4, 20];
+Console.WriteLine(
+    $"[{string.Join(",", bananaPiles1)}], h = 5" +
+    $" -> {KokoEatingBananas.GetMinEatingSpeed(bananaPiles1, 5)}");
+
+int[] bananaPiles2 = [2, 10];
+Console.WriteLine(
+    $"[{string.Join(",", bananaPiles2)}], h = 3" +
+    $" -> {KokoEatingBananas.GetMinEatingSpeed(bananaPiles2, 3)}");
+
+#endregion 04BinarySearch-03KokoEatingBananas [Medium]
 
 Console.ReadLine();
